@@ -3,7 +3,7 @@ import { IOClients } from '@vtex/api'
 import { UsersClient } from './users'
 import {PostClient} from './getPosts'
 import { ExternalMasterdata } from './externalMasterdata'
-
+import { ExternalPvt } from './externalPvt'
 export class Clients extends IOClients {
   public get users() {
     return this.getOrSet('users', UsersClient)
@@ -15,5 +15,9 @@ export class Clients extends IOClients {
 
   public get posts() {
     return this.getOrSet('externalMasterdata', PostClient)
+  }
+
+  public get pvt() {
+    return this.getOrSet('externalPvt', ExternalPvt)
   }
 }
