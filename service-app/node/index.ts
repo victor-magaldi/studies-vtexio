@@ -15,6 +15,7 @@ import { usersRest } from './middlewares/usersRest'
 import { userById } from './middlewares/usersById'
 import { usersPost } from './middlewares/usersPost'
 import { getPosts } from './middlewares/getPosts'
+import { getSellersById } from './middlewares/getSellers'
 
 const MEDIUM_TIMEOUT_MS = 2 * 1000
 
@@ -43,6 +44,9 @@ export default new Service<Clients, RecorderState, ParamsContext>({
     }),
     getPosts: method({
       GET: [getPosts]
+    }),
+    getSellersById: method({
+      GET: [getSellersById]
     }),
   },
   graphql: {
