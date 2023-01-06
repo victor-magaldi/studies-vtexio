@@ -4,6 +4,7 @@ import { UsersClient } from './users'
 import {PostClient} from './getPosts'
 import { ExternalMasterdata } from './externalMasterdata'
 import { ExternalPvt } from './externalPvt'
+import { Search } from './search'
 export class Clients extends IOClients {
   public get users() {
     return this.getOrSet('users', UsersClient)
@@ -19,5 +20,8 @@ export class Clients extends IOClients {
 
   public get pvt() {
     return this.getOrSet('externalPvt', ExternalPvt)
+  }
+  public get search() {
+    return this.getOrSet('search', Search)
   }
 }
