@@ -16,6 +16,10 @@
     "getPosts": {
       "path": "/_v/posts",
       "public": true
+    },
+    "getSellersById":{
+      "path": "/_v/sellers",
+      "public": true
     }
   }
 }

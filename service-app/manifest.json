@@ -1,6 +1,6 @@
 {
-  "name": "acctglobal",
-  "vendor": "acctglobal-vtexio-boilerplate-backend",
+  "name": "acctglobal-vtexio-boilerplate-backend",
+  "vendor": "acctglobal",
   "version": "0.1.0",
   "title": "GraphQL Example",
   "description": "Reference app for VTEX IO GraphQL Services",
